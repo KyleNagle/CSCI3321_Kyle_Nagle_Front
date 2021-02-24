@@ -1,0 +1,35 @@
+#squares-container{
+    border: 1 px #000000 solid;
+    height: 350px;
+    text-align: center;
+
+}
+.even{
+border: 1px #000000 dashed;
+width: 50px;
+height: 50px;
+margin: 5px;
+background-color: crimson;
+color: #ffffff;
+line-height:50px;
+transition: all 6s;
+}
+
+.odd{
+    border: 1px #000000 dashed;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: blueviolet;
+    color: #ffffff;
+    line-height: 50px;
+    transition: all 6s;
+}
+
+
+#sqaures-containe:hover .odd{
+    transform: translateX(200px) rotate(1080deg)
+}
+#sqaures-containe:hover .even{
+    transform: translateX(200px) rotate(-1080deg)
+}

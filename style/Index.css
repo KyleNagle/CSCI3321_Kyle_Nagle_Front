@@ -1,0 +1,31 @@
+h1{color: black;}
+h2{color:black}
+.item1 { grid-area: header;}
+.item2 { grid-area: links; text-align: right;}
+.item3 { grid-area: gap; }
+
+
+
+.outbox{background-color:violet; width:auto; border: 5px solid #000; padding:15px; margin:20px;}
+.topbox{background-color: white; width:auto; border:2px solid blue;}
+.botbox{background-color: lightblue; width:auto; border:2px solid  darkmagenta; padding:10px;margin:5px}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header gap links links links links';
+  grid-gap: 2px;
+  background-color: #ffffff;
+  padding: 10px;
+
+}
+
+.grid-container > div {
+  background-color:#ffffff;
+  padding: 20px 0px 0px 0px;
+  font-size: 30px;
+  border-width: 2px;
+
+
+}
+
