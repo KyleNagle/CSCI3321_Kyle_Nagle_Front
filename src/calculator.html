@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/calculator.css">
     <script>
-function updateDisplay(newValue){
-//find display box 
+function updateDisplay(newValue){ 
     var d = document.getElementById('display');
-    d.innerHTML += newValue;
+
     switch (newValue){
         case ' ':       
             d.innerHTML = ' ';
-            break
+            break;
             case '0':
             case '1':
             case '2':
@@ -30,10 +29,24 @@ function updateDisplay(newValue){
             case '-':
             case '*':
             case '/':
+                if(d.innerHTML.endsWith('+')|| d.innerHTML.endsWith('-')||d.innerHTML.endsWith('*') ||d.innerHTML.endsWith('/')) {
+                    break;
+                }
+                 else{
+                     d.innerHTML += newValue;
+                     break
+                 }   
                 //if the current conten in the display box ends with +,-,*, or /, then do nothing
                 //break;
                 //else append newValue to the String<-- add another break here 
             case '=':
+                if(d.innerHTML==' '){
+                break;
+            }
+            else{
+                d.innerHTML = eval(d.innerHTML);
+                break;
+            }
                 //if empty break
                 //else eval
                 

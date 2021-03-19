@@ -5,7 +5,7 @@ margin:auto;
 background-color: #61429d;
 border-radius: 5px;
 padding:10px;
-grid-gap:5px;
+grid-gap:7px;
 grid-template-areas: 
 'result result result result'
 'addition subtraction multiplication division'
@@ -82,4 +82,6 @@ grid-template-areas:
 }
 .equal{
     grid-area: equal;
+    height: auto;
+    line-height: 200px;
 }
