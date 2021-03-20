@@ -36,20 +36,20 @@ function updateDisplay(newValue){
                      d.innerHTML += newValue;
                      break
                  }   
-                //if the current conten in the display box ends with +,-,*, or /, then do nothing
-                //break;
-                //else append newValue to the String<-- add another break here 
+                
             case '=':
                 if(d.innerHTML==' '){
                 break;
             }
+            else if(d.innerHTML.endsWith('+')|| d.innerHTML.endsWith('-')||d.innerHTML.endsWith('*') ||d.innerHTML.endsWith('/')) {
+                d.innerHTML = "ERR";    
+                break;
+                }
+
             else{
                 d.innerHTML = eval(d.innerHTML);
                 break;
-            }
-                //if empty break
-                //else eval
-                
+            }           
 
             }
 }
