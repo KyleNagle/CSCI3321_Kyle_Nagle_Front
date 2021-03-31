@@ -11,6 +11,9 @@
     'spot4 spot5 spot6'
     'spot7 spot8 spot9';
 }
+#status{
+    text-align: center;
+}
 
 .spot{
     background-color: #61429d;
